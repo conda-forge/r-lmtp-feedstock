@@ -1,6 +1,5 @@
 {% set version = '1.4.0' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-lmtp
@@ -13,8 +12,7 @@ source:
   sha256: 7619e671129d364fbe2acc6d82f723a1ecddc4037702ef0d36e36e629645fe81
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
