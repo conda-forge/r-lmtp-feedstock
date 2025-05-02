@@ -1,4 +1,4 @@
-{% set version = '1.4.0' %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmtp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmtp/lmtp_{{ version }}.tar.gz
-  sha256: 7619e671129d364fbe2acc6d82f723a1ecddc4037702ef0d36e36e629645fe81
+  sha256: ef7685738bd8607e917e8369537b997cd24f2bb6501d5de3ea5e6ccd8dc9b5c2
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -62,14 +62,9 @@ about:
   home: https://beyondtheate.com/
   dev_url: https://github.com/nt-williams/lmtp
   license: AGPL-3.0-only
-  summary: Non-parametric estimators for casual effects based on longitudinal modified treatment
-    policies as described in Diaz, Williams, Hoffman, and Schenck <doi:10.1080/01621459.2021.1955691>,
-    traditional point treatment, and traditional longitudinal effects. Continuous, binary,
-    categorical treatments, and multivariate treatments are allowed as well are censored
-    outcomes. The treatment mechanism is estimated via a density ratio classification
-    procedure irrespective of treatment variable type. For both continuous and binary
-    outcomes, additive treatment effects can be calculated and relative risks and odds
-    ratios may be calculated for binary outcomes.
+  summary: Non-parametric estimators for casual effects based on longitudinal modified treatment policies as described in Diaz, Williams, Hoffman, and Schenck <doi:10.1080/01621459.2021.1955691>, traditional point treatment, and traditional longitudinal effects. Continuous, binary, categorical treatments, and multivariate
+    treatments are allowed as well are censored outcomes. The treatment mechanism is estimated via a density ratio classification procedure irrespective of treatment variable type. For both continuous and binary outcomes, additive treatment effects can be calculated and relative risks and odds ratios may be calculated for
+    binary outcomes.
   license_family: AGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3
