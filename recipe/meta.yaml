@@ -35,10 +35,12 @@ requirements:
     - r-data.table >=1.13.0
     - r-future >=1.17.0
     - r-generics
+    - r-ife
+    - r-isotone
+    - r-lifecycle
     - r-nnls
     - r-origami
     - r-progressr
-    - r-schoolmath
   run:
     - r-base
     - r-r6
@@ -48,10 +50,12 @@ requirements:
     - r-data.table >=1.13.0
     - r-future >=1.17.0
     - r-generics
+    - r-ife
+    - r-isotone
+    - r-lifecycle
     - r-nnls
     - r-origami
     - r-progressr
-    - r-schoolmath
 
 test:
   commands:
