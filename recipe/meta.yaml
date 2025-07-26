@@ -1,4 +1,4 @@
-{% set version = "1.5.2" %}
+{% set version = "1.5.3" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmtp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmtp/lmtp_{{ version }}.tar.gz
-  sha256: 3c7cbf6776b0c11571b65183beda71260816d94c65a8897f9373d1f7720a90ae
+  sha256: 4026c79ee7f1c8e9d6c2eb66f763980adc321186be7f16a21d3f37da0dab9a71
 
 build:
   number: 0
