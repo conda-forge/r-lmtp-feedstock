@@ -7,7 +7,7 @@ Home: https://beyondtheate.com/
 
 Package license: AGPL-3.0-only
 
-Summary: Non-parametric estimators for casual effects based on longitudinal modified treatment policies as described in Diaz, Williams, Hoffman, and Schenck <doi:10.1080/01621459.2021.1955691>, traditional point treatment, and traditional longitudinal effects. Continuous, binary, categorical treatments, and multivariate treatments are allowed as well are censored outcomes. The treatment mechanism is estimated via a density ratio classification procedure irrespective of treatment variable type. For both continuous and binary outcomes, additive treatment effects can be calculated and relative risks and odds ratios may be calculated for binary outcomes.
+Summary: Non-parametric estimators for casual effects based on longitudinal modified treatment policies as described in Diaz, Williams, Hoffman, and Schenck <doi:10.1080/01621459.2021.1955691>, traditional point treatment, and traditional longitudinal effects. Continuous, binary, categorical treatments, and multivariate treatments are allowed as well are censored outcomes. The treatment mechanism is estimated via a density ratio classification procedure irrespective of treatment variable type. For both continuous and binary outcomes, additive treatment effects can be calculated and relative risks and odds ratios may be calculated for binary outcomes. Supports survival outcomes with competing risks (Diaz, Hoffman, and Hejazi; <doi:10.1007/s10985-023-09606-7>).
 
 Development: https://github.com/nt-williams/lmtp
 
