@@ -1,4 +1,4 @@
-{% set version = "1.5.3" %}
+{% set version = "1.5.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmtp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmtp/lmtp_{{ version }}.tar.gz
-  sha256: 4026c79ee7f1c8e9d6c2eb66f763980adc321186be7f16a21d3f37da0dab9a71
+  sha256: ac50cd58aba37b68d0415ddbe191b2132f203c0dc0ba5d1cb1835675432c0802
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -35,11 +35,10 @@ requirements:
     - r-data.table >=1.13.0
     - r-future >=1.17.0
     - r-generics
-    - r-ife
+    - r-ife >=0.2.0
     - r-isotone
     - r-lifecycle
     - r-nnls
-    - r-origami
     - r-progressr
   run:
     - r-base
@@ -50,11 +49,10 @@ requirements:
     - r-data.table >=1.13.0
     - r-future >=1.17.0
     - r-generics
-    - r-ife
+    - r-ife >=0.2.0
     - r-isotone
     - r-lifecycle
     - r-nnls
-    - r-origami
     - r-progressr
 
 test:
@@ -66,9 +64,15 @@ about:
   home: https://beyondtheate.com/
   dev_url: https://github.com/nt-williams/lmtp
   license: AGPL-3.0-only
-  summary: Non-parametric estimators for casual effects based on longitudinal modified treatment policies as described in Diaz, Williams, Hoffman, and Schenck <doi:10.1080/01621459.2021.1955691>, traditional point treatment, and traditional longitudinal effects. Continuous, binary, categorical treatments, and multivariate
-    treatments are allowed as well are censored outcomes. The treatment mechanism is estimated via a density ratio classification procedure irrespective of treatment variable type. For both continuous and binary outcomes, additive treatment effects can be calculated and relative risks and odds ratios may be calculated for
-    binary outcomes.
+  summary: Non-parametric estimators for casual effects based on longitudinal modified treatment
+    policies as described in Diaz, Williams, Hoffman, and Schenck <doi:10.1080/01621459.2021.1955691>,
+    traditional point treatment, and traditional longitudinal effects. Continuous, binary,
+    categorical treatments, and multivariate treatments are allowed as well are censored
+    outcomes. The treatment mechanism is estimated via a density ratio classification
+    procedure irrespective of treatment variable type. For both continuous and binary
+    outcomes, additive treatment effects can be calculated and relative risks and odds
+    ratios may be calculated for binary outcomes. Supports survival outcomes with competing
+    risks (Diaz, Hoffman, and Hejazi; <doi:10.1007/s10985-023-09606-7>).
   license_family: AGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3
