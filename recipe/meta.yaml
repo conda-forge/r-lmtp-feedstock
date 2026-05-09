@@ -35,11 +35,10 @@ requirements:
     - r-data.table >=1.13.0
     - r-future >=1.17.0
     - r-generics
-    - r-ife
+    - r-ife >=0.2.0
     - r-isotone
     - r-lifecycle
     - r-nnls
-    - r-origami
     - r-progressr
   run:
     - r-base
@@ -50,11 +49,10 @@ requirements:
     - r-data.table >=1.13.0
     - r-future >=1.17.0
     - r-generics
-    - r-ife
+    - r-ife >=0.2.0
     - r-isotone
     - r-lifecycle
     - r-nnls
-    - r-origami
     - r-progressr
 
 test:
@@ -66,9 +64,15 @@ about:
   home: https://beyondtheate.com/
   dev_url: https://github.com/nt-williams/lmtp
   license: AGPL-3.0-only
-  summary: Non-parametric estimators for casual effects based on longitudinal modified treatment policies as described in Diaz, Williams, Hoffman, and Schenck <doi:10.1080/01621459.2021.1955691>, traditional point treatment, and traditional longitudinal effects. Continuous, binary, categorical treatments, and 
-    multivariate treatments are allowed as well are censored outcomes. The treatment mechanism is estimated via a density ratio classification procedure irrespective of treatment variable type. For both continuous and binary outcomes, additive treatment effects can be calculated and relative risks and odds ratios may 
-    be calculated for binary outcomes.
+  summary: Non-parametric estimators for casual effects based on longitudinal modified treatment
+    policies as described in Diaz, Williams, Hoffman, and Schenck <doi:10.1080/01621459.2021.1955691>,
+    traditional point treatment, and traditional longitudinal effects. Continuous, binary,
+    categorical treatments, and multivariate treatments are allowed as well are censored
+    outcomes. The treatment mechanism is estimated via a density ratio classification
+    procedure irrespective of treatment variable type. For both continuous and binary
+    outcomes, additive treatment effects can be calculated and relative risks and odds
+    ratios may be calculated for binary outcomes. Supports survival outcomes with competing
+    risks (Diaz, Hoffman, and Hejazi; <doi:10.1007/s10985-023-09606-7>).
   license_family: AGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/AGPL-3
